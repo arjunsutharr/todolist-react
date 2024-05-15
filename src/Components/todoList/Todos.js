@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { getAllTodos, todoSelector } from "../../../redux/reducers/todoReducer";
+import { getAllTodos, todoSelector } from "../../redux/reducers/todoReducer";
 import { useDispatch, useSelector } from "react-redux";
-import TodoCard from "../../../Components/card/TodoCard";
+import TodoCard from "../card/TodoCard";
 import todosStyles from "./Todos.module.css";
 
 function Todos() {
