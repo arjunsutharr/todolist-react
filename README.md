@@ -43,7 +43,7 @@ This is a simple TodoList React application that interacts with a dummy REST API
 1. Clone the repository:
 
 ```bash
-git clone []()
+git clone [https://github.com/arjunsutharr/todolist-react](https://github.com/arjunsutharr/todolist-react)
 ```
 
 2. Navigate to the project directory:
