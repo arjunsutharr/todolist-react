@@ -1,46 +1,84 @@
-# Getting Started with Create React App and Redux
+## Todolist React Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This is a simple TodoList React application that interacts with a dummy REST API [jsonplaceholder](https://jsonplaceholder.typicode.com/todos) to perform CRUD (Create, Read, Update, Delete) operations on todo items.
 
-## Available Scripts
+**Features:**
 
-In the project directory, you can run:
+- Fetch Todo Items
 
-### `npm start`
+  - Retrieves and displays todo items from the JSONPlaceholder API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Add a Todo Item
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+      - Allows users to add new todo items.
+      - Sends a POST request to https://jsonplaceholder.typicode.com/todos to simulate adding a new item.
+      - The added item is stored in the React component's state.
 
-### `npm test`
+- Update a Todo Item
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - Supports updating existing todo items.
+  - Initiates a PUT request to https://jsonplaceholder.typicode.com/todos/:id to simulate updating an item.
+  - The updated item reflects changes in the React component's state.
 
-### `npm run build`
+- Delete a Todo Item
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - Enables users to delete todo items.
+  - Sends a DELETE request to https://jsonplaceholder.typicode.com/todos/:id to simulate item deletion.
+  - The deleted item is removed from the React component's state.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Table of Contents**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Running the Application](#running-the-application)
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js (version 14 or later) and npm (or yarn) installed on your system. You can download them from [https://nodejs.org/en/download](https://nodejs.org/en/download)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository:
 
-## Learn More
+```bash
+git clone []()
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Navigate to the project directory:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+cd todolist-react
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+## Project Structure
+
+This project adheres to a well-organized structure for better maintainability:
+
+- src: Houses the core React application code.
+- components: Reusable React components for building UI elements.
+- pages: Individual application pages with specific functionalities, including 404Page.
+- redux: Contains Redux-related files for managing application state:
+
+  - todoReducer.js: Manages to-dos state and functions(getAllTodos, addTodo, editTodo, deleteTodo).
+
+- App.js: The main application entry point, responsible for initializing components, routing, and authentication.
+- public: Contains static assets like images, fonts, and favicons used throughout the app.
+- package.json: Manages project dependencies, scripts, and metadata.
+
+## Running the Application
+
+1. Start the development server:
+
+```bash
+npm start
+```
+
+This will launch the development server and open BusyBuy in your default browser, usually at http://localhost:3000 (the port might vary).

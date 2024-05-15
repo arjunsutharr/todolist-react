@@ -1,5 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+}
+
+.appTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: salmon;
 }
 
 .App-logo {

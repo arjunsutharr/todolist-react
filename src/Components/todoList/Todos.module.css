@@ -1,0 +1,11 @@
+.container {
+  margin-top: 2rem;
+  height: 88vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  overflow-y: scroll;
+  padding-bottom: 10rem;
+}
